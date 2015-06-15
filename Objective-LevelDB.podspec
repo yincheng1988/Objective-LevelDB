@@ -15,4 +15,6 @@ Pod::Spec.new do |s|
   s.source_files = 'Classes/*.{h,m,mm}'
   s.frameworks   = "leveldb"
   s.requires_arc = false
+
+  s.xcconfig     = { 'FRAMEWORK_SEARCH_PATHS' => '${PODS_ROOT}/../Carthage/Build/iOS' }
 end
